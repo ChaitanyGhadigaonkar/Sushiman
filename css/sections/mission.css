@@ -1,0 +1,105 @@
+.mission{
+    display: flex;
+    overflow: hidden;
+    
+}   
+.mission__left{
+    flex: 0.78;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+}
+
+.mission__left__topimg{
+    padding: 32px 64px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-image: url("../../assets/about_bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 5px solid var(--color-creamson);
+
+}
+
+.mission__left--topimg{
+    width: 225px;
+    height: 200px
+}
+
+.mission__left__botimg{
+    padding: 32px 64px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("../../assets/about_bg2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-top: 5px solid var(--color-creamson);
+}
+.mission__left--botimg{
+    width: 225px;
+    height: 200px
+}
+
+.mission__left--btn{
+    position: absolute;
+    right: 0;
+    top: 45%;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    background: var(--black-200);
+    color: white;
+    border-radius: 32px 0 0 32px;
+    min-height: 64px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+
+.mission__right{
+    flex: 1;
+}
+
+.mission__right__div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.mission__right__div--p{
+    text-align: left;
+    color: var(--primary-color);
+    opacity: 0.8;
+    font-size: 20px;
+    padding: 15px 0;
+    font-family: var(--plus-jakarta-sans);
+    letter-spacing: -0.01em;
+    font-weight: 400;
+}
+
+.mission__right__div--h1{
+    font-size: 64px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    color: var(--black-200);
+    padding: 5px 0;
+    text-align:left;
+    letter-spacing: 0.05em;
+}
+.mission__right__div--desc{
+    font-size: 20px;
+    font-family: var(--playfair-display);
+    padding: 20px 0;
+
+}
