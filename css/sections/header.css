@@ -2,11 +2,25 @@ header {
   display: flex;
   overflow: hidden;
   height: 70px;
+  position: relative;
+}
+.hamburger {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  display: none;
+  cursor: pointer;
+}
+.hamburger img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 .header__nav{
   display: flex;
   /* width: 40%; */
   flex: 1;
+  
 }
 
 .header__logo {
@@ -28,7 +42,7 @@ header {
   position: absolute;
   inset: 0;
   background-color: var(--primary-color);
-  width: 90%;
+  width: 100%;
   z-index: -1;
 }
 
@@ -39,7 +53,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   gap: 64px;
-  padding: 20px;
+  /* padding: 40px; */
   
 }
 
@@ -60,4 +74,22 @@ header {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+
+/* responsive  */
+
+@media screen and (max-width: 1024px) {
+    .header__right{
+      padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger{
+      display: block;
+    }
+    .header__right{
+      display: none;
+    }
 }

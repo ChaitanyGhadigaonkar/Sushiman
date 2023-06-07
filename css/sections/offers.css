@@ -47,6 +47,7 @@
     font-size: 16px;
     padding: 7px 12px;
     background-color: var(--primary-color);
+    font-family: var(--plus-jakarta-sans);
     color: #fffc;
 }
 
@@ -57,11 +58,44 @@
 .offers-button{
     background-color: var(--black-400);
     color: white;
-    font-family: var(--playfair-display);
     font-size: 20px;
     padding: 15px 40px;
     border: 0;
     border-radius: 32px;
     outline: 0;
     cursor: pointer;
+    font-family: var(--plus-jakarta-sans);
+}
+
+/* responsive  */
+
+@media screen and (max-width: 1024px) {
+    .offers{
+        padding: 40px 60px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .offers__button{
+        border: 0;
+        flex-direction: column;
+        gap: 20px;
+    }   
+    .offers__button input{
+        width: 400px;
+        border: 1px solid #fffc;
+        border-radius: 18px;
+        padding: 12px 18px;
+        font-family: var(--plus-jakarta-sans);
+    }
+    .offers-button{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .offers__button input{
+        width: 330px;
+    }
 }

@@ -3,7 +3,7 @@
     overflow: hidden;
 }   
 .mission__left{
-    flex: 1;
+    flex: 1.15;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -68,10 +68,11 @@
 
 .mission__right{
     flex: 1;
-    padding: 80px;
+    padding: 80px 40px;
 }
 
 .mission__right__div{
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -101,4 +102,55 @@
     font-family: var(--playfair-display);
     padding: 20px 0;
 
+}
+
+
+
+
+
+
+
+
+/* responsive  */
+
+@media screen and (max-width: 1024px) {
+    .mission{
+        flex-direction: column;
+    }
+    .mission__left{
+        flex-direction: row;
+
+    }
+    .mission__left--btn{
+        display: none;
+    }
+    .mission__left__botimg{
+        border-left: 2px solid var(--color-creamson);
+        border-top: 0;
+    }
+    .mission__left__topimg{
+        border-right: 2px solid var(--color-creamson);
+        border-bottom: 0;
+    }
+    .mission__right{
+        padding: 60px 70px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .mission__left{
+        flex-direction: column;
+    }
+    .mission__left--btn{
+        display: block;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .mission__right{
+        padding: 20px 30px;
+    }
 }

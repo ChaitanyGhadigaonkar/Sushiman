@@ -5,6 +5,8 @@
     justify-content: space-between;
     padding: 15px 32px;
     background-color: var(--color-white);
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .footer__left-h1{
@@ -49,4 +51,20 @@
 }
 .footer__right img{
     object-fit: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer{
+        padding: 10px;
+    }
+    .footer__middle{
+        gap: 15px;
+    }
 }

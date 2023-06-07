@@ -43,6 +43,9 @@
           </div>
         </div>
     </nav>
+    <div class="hamburger">
+      <img src="assets/menu.svg" alt="menu" srcset="">
+    </div>
   </header>
   <section class="hero">
     <div class="hero__left">
@@ -142,7 +145,7 @@
       </div>
     </div>
     <div class="popular__bottom">
-      <div class="popular__bottom__cards">
+      <div class="popular__bottom__cards" id="popular__bottom__card-left">
         <img src="assets/sushi-12.png" alt="sushi" srcset="">
         <h4>Chezu Sushi</h4>
         <div class="popular__bottom__cards__price">
@@ -168,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="popular__bottom__cards">
+      <div class="popular__bottom__cards" id="popular__bottom__card-right">
         <img src="assets/sushi-10.png" alt="sushi" srcset="">
         <h4>Ramen Legendo</h4>
         <div class="popular__bottom__cards__price">
@@ -189,23 +192,19 @@
   </section>
   <section class="trending__section">
     <button class="trending__button">DISCOVER</button>
-    <img class="arrow-west" src="assets/arrow-horizontal.svg" alt="arrow-left" srcset="">
-    <img class="arrow-north" src="assets/arrow-vertical.svg" alt="arrow" srcset="">
-    <img class="arrow-south" src="assets/arrow-vertical.svg" alt="arrow" srcset="">
-    <img class="arrow-east" src="assets/arrow-horizontal.svg" alt="arrow" srcset="">
-
-
     <div class="trending">
       <div class="trending__top">
+        <img class="arrow-north" src="assets/arrow-vertical.svg" alt="arrow" srcset="">
+        <img class="arrow-east" src="assets/arrow-horizontal.svg" alt="arrow" srcset="">
         <div class="trending__top__left">
           <p class="trending__top__left-p">What’s Trending / トレンド</p>
           <h1 class="trending__top__left-h1">
             Japanese Sushi
           </h1>
+          <p class="trending__top__left__checkbox-p">
+            Feel the taste of the most delicious Sushi here.
+          </p>
           <div class="trending__top__left__checkbox">
-            <p class="trending__top__left__checkbox-p">
-              Feel the taste of the most delicious Sushi here.
-            </p>
             <div class="flex-container">
               <div class="checkbox">
                 <img src="assets/check.svg" alt="check" srcset="" />
@@ -250,15 +249,18 @@
     </div>
     <div class="trending-2">
       <div class="trending__top">
+        <img class="arrow-west" src="assets/arrow-horizontal.svg" alt="arrow-left" srcset="">
+        <img class="arrow-south" src="assets/arrow-vertical.svg" alt="arrow" srcset="">
         <div class="trending__top__left">
           <p class="trending__top__left-p">What’s Trending / トレンド</p>
           <h1 class="trending__top__left-h1">
             Japanese Sushi
           </h1>
+          <p class="trending__top__left__checkbox-p">
+            Feel the taste of the most delicious Sushi here.
+          </p>
           <div class="trending__top__left__checkbox">
-            <p class="trending__top__left__checkbox-p">
-              Feel the taste of the most delicious Sushi here.
-            </p>
+            
             <div class="flex-container">
               <div class="checkbox">
                 <img src="assets/check.svg" alt="check" srcset="" />
@@ -331,9 +333,9 @@
       <div class="footer__right_img">
         <img src="/assets/twitter.svg" alt="facebook" srcset="">
       </div>
-     
-      
-     
+
+
+
     </div>
   </section>
 
