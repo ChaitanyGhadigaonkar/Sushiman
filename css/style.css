@@ -25,9 +25,13 @@
     --black-400: #1f1e31;
     --black-500: #555555;
     --gray-100: #888888;
-  
+    
     --color-white: #fff;
     --color-creamson: #fff0de;
+
+    /* animation timings */
+    --animation-time1: 700ms;
+    --animation-time2: 1200ms;
 }
 
 *{
@@ -47,3 +51,84 @@ a{
 li{
     list-style: none;
 }
+.hidden-left{
+    opacity: 0;
+    transition: opacity var(--animation-time2) ease-in-out;
+}
+.hidden-right{
+    opacity: 0;
+    transition: opacity var(--animation-time2) ease-in-out;
+}
+.hidden-bottom-up{
+    opacity: 0;
+    transition: opacity var(--animation-time2) ease-in-out;
+}
+.show{
+    opacity: 1;
+    transition: opacity var(--animation-time2) ease-in-out;
+}
+
+/* top bottom animation */
+
+.top{
+    animation-name: top-down;
+    animation-duration: var(--animation-time1);
+    transition-property: transform;
+    transition-timing-function: ease-in;
+}
+@keyframes top-down {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.bottom-up{
+    animation-name: bottom;
+    animation-duration: var(--animation-time2);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+@keyframes bottom {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.right-left{
+    animation-name: right;
+    animation-duration: var(--animation-time2);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+@keyframes right {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.left-right{
+    animation-name: left;
+    animation-duration: var(--animation-time2);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+@keyframes left {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+

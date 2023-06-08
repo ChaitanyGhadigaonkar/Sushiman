@@ -259,3 +259,9 @@
         padding: 15px;
     }
 }
+
+@media screen and (max-width: 425px){
+    .popular__top-h1{
+        font-size: 32px;
+    }
+}
